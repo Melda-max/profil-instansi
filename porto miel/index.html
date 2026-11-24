@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Instansi - Dinas Pariwisata Provinsi Kalimantan Utara</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Google: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- NAVBAR -->
+    <header class="bg-blue-950 text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Logo & Nama Instansi -->
+            <div class="flex items-center space-x-3">
+                <img src="logo.jpeg"Logo Dinas Pariwisata" class="h-10 w-auto object-contain rounded-md bg-white p-1">
+                <div>
+                    <h1 class="font-bold text-base md:text-lg leading-tight">DINAS PARIWISATA</h1>
+                    <p class="text-xs text-blue-200">Provinsi Kalimantan Utara</p>
+                </div>
+            </div>
+
+            <!-- Menu Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#beranda" class="hover:text-amber-400 transition">Beranda</a>
+                <a href="#profil" class="hover:text-amber-400 transition">Profil & Tupoksi</a>
+                <a href="#bidang" class="hover:text-amber-400 transition">Bidang</a>
+                <a href="#galeri" class="hover:text-amber-400 transition">Galeri</a>
+                <a href="#kontak" class="hover:text-amber-400 transition">Kontak</a>
+            </nav>
+
+            <!-- Tombol Menu Mobile -->
+            <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Dropdown Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 pb-4 space-y-2 text-sm">
+            <a href="#beranda" class="block py-2 hover:text-amber-400">Beranda</a>
+            <a href="#profil" class="block py-2 hover:text-amber-400">Profil & Tupoksi</a>
+            <a href="#bidang" class="block py-2 hover:text-amber-400">Bidang</a>
+            <a href="#galeri" class="block py-2 hover:text-amber-400">Galeri</a>
+            <a href="#kontak" class="block py-2 hover:text-amber-400">Kontak</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative bg-gradient-to-r from-blue-950 via-blue-900 to-teal-800 text-white py-24 px-4">
+        <div class="max-w-6xl mx-auto text-center md:text-left md:flex items-center justify-between">
+            <div class="md:w-2/3 space-y-5">
+                <span class="inline-block bg-amber-500/20 border border-amber-400 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full">
+                    Portal Resmi Informasi Instansi
+                </span>
+                <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+                    Mewujudkan Pariwisata Berdaya Saing & Berkelanjutan
+                </h2>
+                <p class="text-blue-100 text-base md:text-lg max-w-2xl">
+                    Selamat datang di portal profil Dinas Pariwisata. Mengembangkan potensi destinasi wisata, ekonomi kreatif, serta pelestarian budaya daerah.
+                </p>
+                <div class="pt-2 flex flex-wrap gap-3 justify-center md:justify-start">
+                    <a href="#profil" class="bg-amber-500 hover:bg-amber-600 text-blue-950 font-semibold px-6 py-3 rounded-lg transition">
+                        Tentang Instansi
+                    </a>
+                    <a href="#kontak" class="bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-6 py-3 rounded-lg transition">
+                        Informasi Kontak
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL, VISI MISI & TUPOKSI -->
+    <section id="profil" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-950">Profil & Tupoksi Instansi</h3>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+            <!-- Gambaran Umum & Visi Misi -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+                <h4 class="text-xl font-bold text-blue-900">Gambaran Umum</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Dinas Pariwisata merupakan unsur pelaksana urusan pemerintahan di bidang pariwisata yang berkedudukan di bawah dan bertanggung jawab kepada Gubernur melalui Sekretaris Daerah.
+                </p>
+                <div class="pt-2">
+                    <h5 class="font-bold text-blue-950 mb-1">Visi</h5>
+                    <p class="text-sm text-slate-600 italic bg-blue-50 p-3 rounded-lg border-l-4 border-blue-900">
+                        "Terwujudnya Kalimantan Utara yang Berubah, Maju, dan Sejahtera melalui Sektor Pariwisata yang Unggul."
+                    </p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-blue-950 mb-1">Misi Utama</h5>
+                    <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
+                        <li>Meningkatkan kualitas dan daya tarik destinasi wisata daerah.</li>
+                        <li>Mengembangkan pemasaran pariwisata yang efektif dan terpadu.</li>
+                        <li>Mendorong pertumbuhan pelaku usaha ekonomi kreatif lokal.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tugas Pokok & Fungsi -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+                <h4 class="text-xl font-bold text-blue-900">Tugas Pokok & Fungsi</h4>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    Membantu Kepala Daerah dalam melaksanakan urusan pemerintahan bidang pariwisata serta tugas pembantuan yang ditugaskan kepada daerah.
+                </p>
+                <div class="space-y-3 pt-2">
+                    <div class="flex items-start space-x-3">
+                        <span class="bg-blue-100 text-blue-900 font-bold px-2.5 py-1 rounded text-xs">01</span>
+                        <p class="text-sm text-slate-600">Perumusan kebijakan teknis di bidang destinasi, pemasaran, dan ekonomi kreatif.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="bg-blue-100 text-blue-900 font-bold px-2.5 py-1 rounded text-xs">02</span>
+                        <p class="text-sm text-slate-600">Pelaksanaan koordinasi, pembinaan, dan fasilitasi pengembangan kepariwisataan.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="bg-blue-100 text-blue-900 font-bold px-2.5 py-1 rounded text-xs">03</span>
+                        <p class="text-sm text-slate-600">Pemantauan, evaluasi, dan pelaporan pelaksanaan program kerja dinas.</p>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="bg-blue-100 text-blue-900 font-bold px-2.5 py-1 rounded text-xs">04</span>
+                        <p class="text-sm text-slate-600">Pelaksanaan administrasi kesekretariatan dinas secara akuntabel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STRUKTUR BIDANG -->
+    <section id="bidang" class="py-16 px-4 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-blue-950">Susunan Organisasi & Bidang</h3>
+                <p class="text-slate-600 text-sm mt-2">Unit kerja yang mendukung operasional dan pelayanan instansi</p>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-blue-900 hover:shadow-md transition">
+                    <h4 class="font-bold text-lg text-blue-950 mb-2">Sekretariat</h4>
+                    <p class="text-sm text-slate-600">Mengelola administrasi umum, kepegawaian, keuangan, serta penyusunan program dan pelaporan dinas.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-teal-600 hover:shadow-md transition">
+                    <h4 class="font-bold text-lg text-blue-950 mb-2">Bidang Destinasi</h4>
+                    <p class="text-sm text-slate-600">Menangani pengembangan daya tarik wisata, tata kelola kawasan, serta infrastruktur pendukung wisata.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-amber-500 hover:shadow-md transition">
+                    <h4 class="font-bold text-lg text-blue-950 mb-2">Bidang Pemasaran</h4>
+                    <p class="text-sm text-slate-600">Fokus pada promosi wisata daerah, penyelenggaraan event, serta kerja sama kemitraan pariwisata.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-indigo-600 hover:shadow-md transition">
+                    <h4 class="font-bold text-lg text-blue-950 mb-2">Bidang Ekraf & SDM</h4>
+                    <p class="text-sm text-slate-600">Membina pelaku ekonomi kreatif dan meningkatkan kompetensi sumber daya manusia pariwisata.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="py-16 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl md:text-3xl font-bold text-blue-950">Galeri Wisata</h3>
+            <p class="text-slate-600 text-sm mt-2">Galeri pesona wisata alam daerah Kalimantan Utara</p>
+            <div class="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Item Galeri 1 -->
+            <div class="group overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200">
+                <div class="h-48 bg-slate-300 overflow-hidden">
+                    <img src="gn.rian.jpeg" alt="Air Terjun Gunung Rian" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-blue-950">Wisata Air Terjun Gunung Rian</h5>
+                    <p class="text-xs text-slate-500 mt-1">Destinasi wisata alam bertingkat di kaki Gunung Rian Kabupaten Tana Tidung, Kalimantan Utara.</p>
+                </div>
+            </div>
+
+            <!-- Item Galeri 2 -->
+            <div class="group overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200">
+                <div class="h-48 bg-slate-300 overflow-hidden">
+                    <img src="goa.jpeg" alt="Goa Berlapis" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-blue-950">Goa Berlapis</h5>
+                    <p class="text-xs text-slate-500 mt-1">Didalamnya, kamu bakal disambut pilar-pilar stalakit kuno dan dinding kars yang membentuk relief alami selama ratusan tahun.</p>
+                </div>
+            </div>
+
+            <!-- Item Galeri 3 -->
+            <div class="group overflow-hidden rounded-xl bg-white shadow-sm border border-slate-200">
+                <div class="h-48 bg-slate-300 overflow-hidden">
+                    <img src="mangrove.jpeg" alt="Mangrove" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-4">
+                    <h5 class="font-bold text-blue-950">Mangrove Tarakan</h5>
+                    <p class="text-xs text-slate-500 mt-1">Hutan bakau seluas 21-22 hektare di tengah Kota Tarakan yang menjadi habitat bekantan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK INSTANSI -->
+    <section id="kontak" class="py-16 px-4 bg-blue-950 text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-2xl space-y-4">
+                <h3 class="text-2xl md:text-3xl font-bold">Informasi Kontak Instansi</h3>
+                <p class="text-blue-200 text-sm leading-relaxed">
+                    Untuk informasi resmi mengenai layanan kepariwisataan, kunjungan kerja, atau koordinasi program, silakan hubungi kantor instansi pada jam kerja berikut:
+                </p>
+                <div class="grid sm:grid-cols-2 gap-4 pt-3 text-sm">
+                    <div class="bg-blue-900/60 border border-blue-800 p-4 rounded-xl">
+                        <p class="text-amber-400 font-semibold text-xs uppercase tracking-wider mb-1">Alamat Kantor</p>
+                        <p class="text-white">Jl. Rambutan, Tanjung Selor, Kabupaten Bulungan, Kalimantan Utara</p>
+                    </div>
+                    <div class="bg-blue-900/60 border border-blue-800 p-4 rounded-xl">
+                        <p class="text-amber-400 font-semibold text-xs uppercase tracking-wider mb-1">Jam Operasional</p>
+                        <p class="text-white">Senin – Jumat, 07.30 – 16.00 WITA</p>
+                    </div>
+                    <div class="bg-blue-900/60 border border-blue-800 p-4 rounded-xl sm:col-span-2">
+                        <p class="text-amber-400 font-semibold text-xs uppercase tracking-wider mb-1">Email Resmi</p>
+                        <p class="text-white">dispar@kaltaraprov.go.id</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-center py-6 text-xs px-4">
+        <p>&copy; 2026 Melda, Dinas Pariwisata Provinsi Kalimantan Utara.</p>
+    </footer>
+
+    <!-- JAVASCRIPT SEDERHANA -->
+    <script>
+        // Toggle Menu Mobile
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
